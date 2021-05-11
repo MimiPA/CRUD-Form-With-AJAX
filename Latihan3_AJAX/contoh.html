@@ -1,0 +1,24 @@
+<script src="jquery.min.js"></script>
+<script>
+	function cekNilai()
+	{
+		var isian = "";
+		if ($('#contoh1').is(":checked"))
+		{
+			isian += $('#contoh1').val() + ",";
+		}
+		if ($('#contoh2').is(":checked"))
+		{
+			isian += $('#contoh2').val() + ",";
+		}
+		if ($('#contoh3').is(":checked"))
+		{
+			isian += $('#contoh3').val() + ",";
+		}
+		alert(isian);		
+	}
+</script>
+<input type='checkbox' id='contoh1' name='contoh1' value='A'>A
+<input type='checkbox' id='contoh2' name='contoh3' value='B'>B
+<input type='checkbox' id='contoh3' name='contoh3' value='C'>C
+<button onClick='cekNilai()'>Cek</button>
